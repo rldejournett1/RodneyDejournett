@@ -235,6 +235,12 @@ h6 a strong {
     color: #333;
 }
 
+h2#moving {
+    animation-name: textMove;
+    animation-duration: 20s;
+    position: relative;
+}
+
 h2 {
     font-size: 2em;
     letter-spacing: -1px;
@@ -1791,7 +1797,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-    background-color: #9ececc;
+    background-color: #40f1ec;
 }
 
 input[type="button"]:active,
@@ -1811,7 +1817,7 @@ button:active,
 }
 
 .item header {
-    background: #fff;
+    background: #00000038;
     margin: 0;
     padding: 1em 0 1em 0;
     font-size: 0.8em;
@@ -1819,6 +1825,7 @@ button:active,
 
 .item header h3 {
     font-size: 1em;
+    color: #1dfefc;
 }
 
 
@@ -2413,18 +2420,38 @@ button:active,
     }
 }
 
+#consoleout {
+    background: rgb(14, 227, 255);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#console ul li {
+    padding-left: 0.5em;
+    list-style-type: '$ ';
+}
+
 div#console {
     text-align: left;
-    color: rgb(155, 9, 155)
+    color: rgb(77, 255, 85);
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: '$  ';
+    padding: 40px;
+    margin: 0 auto;
+    background: #222729;
 }
 
 
-/* Table */
+/* Table Classes */
 
 table,
 th,
 td {
-    border: 2px outset black;
+    border: 1px dashed black;
     animation: borderNTextPop 5s infinite;
     text-align: center;
     background-color: #222729;
@@ -2504,6 +2531,39 @@ td {
     }
     100% {
         fill: #9732dbd4;
+    }
+}
+
+@keyframes textMove {
+    0% {
+        color: rgb(2, 226, 255);
+        left: 0px;
+        top: 0px;
+    }
+    20% {
+        color: rgb(247, 0, 255);
+        left: 200px;
+        top: 0px;
+    }
+    40% {
+        color: rgb(217, 252, 21);
+        left: -200px;
+        top: 0px;
+    }
+    60% {
+        color: rgb(68, 255, 61);
+        left: 200px;
+        top: 0px;
+    }
+    80% {
+        color: rgb(0, 217, 255);
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        color: rgb(255, 244, 97);
+        left: 0px;
+        top: 0px;
     }
 }
 
