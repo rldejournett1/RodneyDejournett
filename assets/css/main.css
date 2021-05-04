@@ -212,7 +212,7 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: #ff0bfc;
+    color: #520f8e;
     line-height: 1.5em;
 }
 
@@ -1817,7 +1817,7 @@ button:active,
 }
 
 .item header {
-    background: #00000038;
+    background: #888;
     margin: 0;
     padding: 1em 0 1em 0;
     font-size: 0.8em;
@@ -1825,7 +1825,7 @@ button:active,
 
 .item header h3 {
     font-size: 1em;
-    color: #1dfefc;
+    color: #520f8e;
 }
 
 
